@@ -1,0 +1,113 @@
+body
+{ background-color: pink;
+}
+
+header {
+  background-color: #FF474F;
+  color: #B8000B;
+  font-family: Merriweather, serif;
+  text-align: center;
+  font-weight: 20px;
+  padding: 20px 10px 10px 20px;
+  margin-top: 10px;
+  border: #B8000B dotted;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+ 
+header:hover {
+  transform: scale(1.1);
+  animation: pulse 1s ease infinite alternate;
+}
+ 
+@keyframes pulse {
+  from { background-color: #ff6f61; }
+  to { background-color: #ff9671; }
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #B8000B;
+  font-size: 1rem;
+}
+
+.Flowers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  background-color: #FF474F;
+  border: 2px #B8000B dotted;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0, 17, 24, 1);
+}
+
+.Cherry Blossoms {
+  background-color: ##E57373;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+ 
+.Cherry Blossoms:hover {
+  opacity: 0.4;
+}
+
+.Wisteria Tree {
+  animation: flickerLight 1.5s infinite ease-in-out;
+}
+
+@keyframes flickerLight {
+  0%,
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.7;
+    filter: brightness(1.4);
+  }
+}
+ 
+Red Spider Lily:hover {
+  width: 100px; /* reflow! */
+  height: 115px; /* reflow! */
+}
+
+footer {
+  background-color: #880E4F;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+ 
+footer:hover {
+  background-color:#FF80AB;
+}
+
+.cta {
+  background-color: none;
+  text-align: center;
+  padding: 2rem;
+}
